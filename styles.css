@@ -1,0 +1,57 @@
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.btn {
+  width: 120px;
+}
+
+.radio {
+  padding: 8px;
+}
+
+input[type="radio"] {
+  margin: 10px;
+  width: 20px;
+  vertical-align: sub;
+  height: 20px;
+}
+
+.information {
+  background-color: #e7f3fe;
+  border-left: 6px solid #2196f3;
+  padding: 10px;
+}
+
+.margin_top {
+  margin-top: 20px;
+}
+
+body {
+  background: radial-gradient(#000, transparent);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.added_languages {
+  height: 85px !important;
+}
+
+.added_languages .badge {
+  font-weight: normal;
+  float: left;
+  padding-right: inherit;
+  padding: 6px;
+}
+
+.added_languages .badge span {
+  font-size: 1.1rem;
+  color: white;
+}
+
+.added_languages .badge .close {
+  font-size: 1.1rem !important;
+}

@@ -8,46 +8,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <style type="text/css">
-    .container {
-      padding-right: 0px;
-      padding-left: 0px;
-    }
-
-    .btn {
-      width: 120px;
-    }
-
-    .radio {
-      padding: 8px;
-    }
-
-    input[type="radio"] {
-      margin: 10px;
-      width: 20px;
-      vertical-align: sub;
-      height: 20px;
-    }
-
-    .information {
-      background-color: #e7f3fe;
-      border-left: 6px solid #2196F3;
-      padding: 10px;
-    }
-
-    .margin_top {
-      margin-top: 20px;
-    }
-
-    body {
-      background: radial-gradient(#000, transparent);
-      height: 100%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="Registration.js"></script>
 </head>
 
 <body>
@@ -414,9 +376,11 @@
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <label for="language">Select Language (Allows Multiple Language)</label>
+              <label for="language">Select Language</label>
               <!-------id="multiselect" multiple="multiple"--------->
-              <select class="custom-select" multiple data-placeholder="-Choose a Language-">
+              <select onchange="select_languages(this)" id="select_language" class="custom-select"
+                data-placeholder="-Choose a Language-">
+                <option value="none">--Select languages--</option>
                 <option value="AF">Afrikaans</option>
                 <option value="SQ">Albanian</option>
                 <option value="AR">Arabic</option>
@@ -491,6 +455,9 @@
                 <option value="XH">Xhosa</option>
               </select>
             </div>
+            <div id="add_languages" class="form-group form-control added_languages">
+              ---Add upto 5 languages---
+            </div>
           </div>
         </div>
 
@@ -547,4 +514,5 @@
   </div>
 
 </body>
+
 </html>
